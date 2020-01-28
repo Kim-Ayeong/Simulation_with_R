@@ -1,6 +1,6 @@
-#11¿ù 5ÀÏ
+#11ì›” 5ì¼
 
-#8.1Àı
+#8.1ì ˆ
 
 #Exercise 8.3
 indic.fun <- function(x) as.numeric(sum((1:5)*(-log(x))) >= 21.6)

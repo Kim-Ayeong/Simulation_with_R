@@ -1,17 +1,17 @@
-#10¿ù1ÀÏ °úÁ¦
+#10ì›”1ì¼ ê³¼ì œ
 
 step 1: t=0, J=1, I=0
-step 2: Generate a random number U and set X=(?1/¥ëJ)logU
+step 2: Generate a random number U and set X=(?1/Î»J)logU
 step 3: If t+X>tJ, go to Step 8
 step 4: t=t+X
 step 5: Generate a random number U
-step 6: If U<=¥ë(t)/¥ëJ, set I=I+1, S(I)=t
+step 6: If U<=Î»(t)/Î»J, set I=I+1, S(I)=t
 # step 7: Go to Step 2
 # step 8: If J=k+1, stop
-# step 9: X=(X?tJ+t)¥ëJ /¥ëJ+1, t=tJ, J=J+1
+# step 9: X=(X?tJ+t)Î»J /Î»J+1, t=tJ, J=J+1
 # step 10: Go to Step 3
 
-lambda=26  						#t=10ÀÏ ¶§
+lambda=26  						#t=10ì¼ ë•Œ
 lt <- function(t) {
   if(0<t & t<5) t/5
   else if(5<t & t<10) 1+5*(t-5)
