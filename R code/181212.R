@@ -1,8 +1,8 @@
-#12¿ù 12ÀÏ
+#12ì›” 12ì¼
 
-#10.3Àı The Gibbs Sampler
+#10.3ì ˆ The Gibbs Sampler
 
-#½Ç½À
+#ì‹¤ìŠµ
 x <- c(91, 504, 557, 609, 693, 727, 803, 857, 929, 970, 1043, 1089, 1195, 1384, 1713)
 n <- length(x)
 xbar <- mean(x)
@@ -25,7 +25,7 @@ for (t in 1:(B-1)) {
   ssq[t+1] <- 1/rgamma(1, shape=post.a, rate=post.b(theta[t+1]))
 }
 plot(theta)
-#95% ½Å·Ú±¸°£ ±¸ÇÏ±â
+#95% ì‹ ë¢°êµ¬ê°„ êµ¬í•˜ê¸°
 
 # Gibbs Sampler: Example 7.3 in Robert and Casella (2009) 
 x = c(91, 504, 557, 609, 693, 727, 803, 857, 929, 970, 1043, 1089, 1195, 1384, 1713) 
